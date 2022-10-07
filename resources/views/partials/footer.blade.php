@@ -83,7 +83,7 @@ $socials = [
         </ul>
 
         <picture>
-          <img src="../assets/img/dc-logo-bg.png" alt="DC Logo BG" />
+          <img src={{asset('../img/dc-logo-bg.png')}} alt="DC Logo BG" />
         </picture>
       </div>
     </div>

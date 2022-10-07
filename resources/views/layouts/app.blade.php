@@ -10,7 +10,9 @@
 <body>
     @include('partials.header')
 
-    <main></main>
+    <main>
+        @yield('content')
+    </main>
 
     @include('partials.footer')
 

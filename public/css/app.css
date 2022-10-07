@@ -61,6 +61,85 @@ header .container .main-nav .main-nav__list li a.active:after {
   bottom: 0;
 }
 
+.series {
+  padding: 50px 0;
+  position: relative;
+}
+.series h3 {
+  position: absolute;
+  text-transform: uppercase;
+  background-color: #0c7cec;
+  color: white;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 0.25rem 1.5rem;
+}
+
+.hero {
+  height: 300px;
+}
+.hero img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+main {
+  background-color: #1c1c1c;
+  color: white;
+  text-align: center;
+}
+main .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main .card-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem 1rem;
+  margin-bottom: 3rem;
+}
+main button {
+  background-color: #0c7cec;
+  color: white;
+  border: none;
+  padding: 0.25rem 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+}
+main button:hover {
+  background-color: white;
+  color: #0c7cec;
+  transform: scale(110%);
+  transition: all 0.2s linear;
+}
+
+.card {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  text-align: start;
+}
+.card img {
+  aspect-ratio: 1/1;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  margin-bottom: 0.5rem;
+}
+.card img:hover {
+  transform: scale(110%);
+  transition: transform 0.2s linear;
+}
+
 footer {
   color: white;
 }
