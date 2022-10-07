@@ -37,11 +37,11 @@ $links4 = [
 ];
 
 $socials = [
-  [ 'src' => "../img/footer-facebook.png",],
-  [ 'src' => "../img/footer-twitter.png",],
-  [ 'src' => "../img/footer-youtube.png",],
-  [ 'src' => "../img/footer-pinterest.png",],
-  [ 'src' => "../img/footer-periscope.png",],
+  ['src' => "../img/footer-facebook.png",],
+  ['src' => "../img/footer-twitter.png",],
+  ['src' => "../img/footer-youtube.png",],
+  ['src' => "../img/footer-pinterest.png",],
+  ['src' => "../img/footer-periscope.png",],
 ];
   @endphp
 
@@ -66,14 +66,14 @@ $socials = [
           </div>
 
           <li class="footer__links">
-              <h3>DC</h3>
-              @foreach ($links3 as $link)
-                <a href="#"> {{ $link['text'] }} </a>
-              @endforeach
-            </li>
-          </div>
+            <h3>DC</h3>
+            @foreach ($links3 as $link)
+              <a href="#"> {{ $link['text'] }} </a>
+            @endforeach
+          </li>
 
-          <li class="footer__links">
+          <div>
+            <li class="footer__links">
               <h3>Sites</h3>
               @foreach ($links4 as $link)
                 <a href="#"> {{ $link['text'] }} </a>
@@ -97,7 +97,7 @@ $socials = [
             <p>Follow Us</p>
               @foreach ($socials as $social)
                 <a href="#">
-                  <img src="{{ $socials['src'] }}">
+                  <img src={{ asset($social['src']) }}>
                 </a>
               @endforeach
           </div>
