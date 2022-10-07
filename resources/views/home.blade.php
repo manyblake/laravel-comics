@@ -22,4 +22,6 @@
 
       <button>Load More</button>
     </section>
+
+    @include('partials.toolbar')
 @endsection

@@ -140,6 +140,38 @@ main button:hover {
   transition: transform 0.2s linear;
 }
 
+.main-toolbar {
+  background-color: #0c7cec;
+  color: white;
+  padding: 3rem 0;
+}
+.main-toolbar .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main-toolbar .container .main-toolbar__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-toolbar .container .main-toolbar__list .main-toolbar__item a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.main-toolbar .container .main-toolbar__list .main-toolbar__item a picture {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+.main-toolbar .container .main-toolbar__list .main-toolbar__item a picture img {
+  height: 100%;
+}
+.main-toolbar .container .main-toolbar__list .main-toolbar__item:hover {
+  transform: scale(110%);
+  transition: transform 0.2s linear;
+}
+
 footer {
   color: white;
 }
