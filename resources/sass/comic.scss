@@ -77,7 +77,8 @@
         .container {
             display: flex;
             color: black;
-            padding: 30px 0 100px;
+            padding-top: 30px;
+            flex-wrap: wrap;
             .comic__talent {
                 .comic__art,
                 .comic__authors {
@@ -144,6 +145,32 @@
 
             .comic__sale-date {
                 border-bottom: 2px solid lightgrey;
+            }
+        }
+        .comic_toolbar {
+            margin-top: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            a {
+                display: flex;
+                flex-basis: 0;
+                flex-grow: 1;
+                border: 2px solid lightgrey;
+                justify-content: space-between;
+                padding: 16px;
+            }
+
+            p {
+                text-transform: uppercase;
+                color: lightgray;
+                font-weight: 800;
+            }
+
+            img {
+                width: 50px;
+                filter: invert(1);
+                filter: brightness(0.7);
             }
         }
     }

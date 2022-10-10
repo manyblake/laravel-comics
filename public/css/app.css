@@ -339,7 +339,8 @@ footer:after {
 .comic__body .comic__details .container {
   display: flex;
   color: black;
-  padding: 30px 0 100px;
+  padding-top: 30px;
+  flex-wrap: wrap;
 }
 .comic__body .comic__details .container .comic__talent {
   flex-basis: 0;
@@ -417,4 +418,28 @@ footer:after {
 }
 .comic__body .comic__details .comic__specs .comic__sale-date {
   border-bottom: 2px solid lightgrey;
+}
+.comic__body .comic__details .comic_toolbar {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.comic__body .comic__details .comic_toolbar a {
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  border: 2px solid lightgrey;
+  justify-content: space-between;
+  padding: 16px;
+}
+.comic__body .comic__details .comic_toolbar p {
+  text-transform: uppercase;
+  color: lightgray;
+  font-weight: 800;
+}
+.comic__body .comic__details .comic_toolbar img {
+  width: 50px;
+  filter: invert(1);
+  filter: brightness(0.7);
 }

@@ -32,6 +32,7 @@
 
     <div class="comic__details">
       <div class="container">
+
         <div class="comic__talent">
           <h4>Talent</h4>
           <div class="comic__art">
@@ -67,8 +68,31 @@
             <p class="comic__specs-title">On Sale Date:</p>
             <p>{{$comic['sale_date']}}</p>
           </div>
-
         </div>
+
+
+          <div class="comic_toolbar">
+
+            <a href="#">
+              <p>digital comics</p>
+              <img src={{asset('../img/buy-comics-digital-comics.png')}}>
+            </a>
+            <a href="#">
+              <p>shop dc</p>
+              <img src={{asset('../img/buy-comics-digital-comics.png')}}>
+            </a>
+            <a href="#">
+              <p>comic shop locator</p>
+              <img src={{asset('../img/buy-comics-digital-comics.png')}}>
+            </a>
+            <a href="#">
+              <p>subscriptions</p>
+              <img src={{asset('../img/buy-comics-digital-comics.png')}}>
+            </a>
+          </div>
+
+
+
       </div>
     </div>
   </section>
