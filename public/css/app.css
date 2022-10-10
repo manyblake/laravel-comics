@@ -280,3 +280,141 @@ footer:after {
   border: 1px solid white;
   max-height: 200px;
 }
+
+.comic__body {
+  background-color: white;
+  padding-top: 60px;
+  text-align: start;
+}
+.comic__body .container .comic__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.comic__body .container .comic__grid .comic__description {
+  padding-right: 50px;
+}
+.comic__body .container .comic__grid .comic__description .comic__text {
+  color: black;
+  padding: 16px 0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.comic__body .container .comic__grid .comic__description h4 {
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.comic__body .container .comic__grid .comic__description .comic__price {
+  background-color: #55ba59;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.comic__body .container .comic__grid .comic__description .comic__available {
+  display: flex;
+  gap: 20px;
+}
+.comic__body .container .comic__grid .comic__description .comic__available .comic__check-avail {
+  padding: 0 20px;
+  display: flex;
+  gap: 20px;
+}
+.comic__body .container .comic__grid .comic__description .comic__available .comic__check-avail::before {
+  display: block;
+  content: "";
+  width: 1px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: black;
+  transform: translateX(-20px);
+}
+.comic__body .comic__details {
+  background-color: #f6f6f6;
+}
+.comic__body .comic__details h4 {
+  margin-bottom: 20px;
+}
+.comic__body .comic__details .container {
+  display: flex;
+  color: black;
+  padding: 30px 0 100px;
+}
+.comic__body .comic__details .container .comic__talent {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.comic__body .comic__details .container .comic__talent .comic__art,
+.comic__body .comic__details .container .comic__talent .comic__authors {
+  border-top: 2px solid lightgrey;
+  padding: 16px 0;
+  margin-right: 30px;
+  font-size: 14px;
+  display: flex;
+}
+.comic__body .comic__details .container .comic__talent .comic__art .comic__art-title,
+.comic__body .comic__details .container .comic__talent .comic__art .comic__writers-title,
+.comic__body .comic__details .container .comic__talent .comic__authors .comic__art-title,
+.comic__body .comic__details .container .comic__talent .comic__authors .comic__writers-title {
+  min-width: 200px;
+}
+.comic__body .comic__details .container .comic__talent .comic__authors {
+  border-bottom: 2px solid lightgrey;
+}
+.comic__body .comic__details .container .comic__talent .comic__artists,
+.comic__body .comic__details .container .comic__talent .comic__writers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.comic__body .comic__details .container .comic__talent .comic__artists .comic__artist,
+.comic__body .comic__details .container .comic__talent .comic__artists .comic__writer,
+.comic__body .comic__details .container .comic__talent .comic__writers .comic__artist,
+.comic__body .comic__details .container .comic__talent .comic__writers .comic__writer {
+  color: cornflowerblue;
+  display: flex;
+  cursor: pointer;
+}
+.comic__body .comic__details .container .comic__talent .comic__artists .comic__artist::after,
+.comic__body .comic__details .container .comic__talent .comic__artists .comic__writer::after,
+.comic__body .comic__details .container .comic__talent .comic__writers .comic__artist::after,
+.comic__body .comic__details .container .comic__talent .comic__writers .comic__writer::after {
+  content: ",";
+  color: black;
+}
+.comic__body .comic__details .container .comic__talent .comic__artists .comic__artist:last-of-type:after,
+.comic__body .comic__details .container .comic__talent .comic__artists .comic__writer:last-of-type:after,
+.comic__body .comic__details .container .comic__talent .comic__writers .comic__artist:last-of-type:after,
+.comic__body .comic__details .container .comic__talent .comic__writers .comic__writer:last-of-type:after {
+  content: "";
+}
+.comic__body .comic__details .comic__specs {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.comic__body .comic__details .comic__specs .comic__serie,
+.comic__body .comic__details .comic__specs .comic__price,
+.comic__body .comic__details .comic__specs .comic__sale-date {
+  display: flex;
+  border-top: 2px solid lightgrey;
+}
+.comic__body .comic__details .comic__specs .comic__serie .comic_serie-link,
+.comic__body .comic__details .comic__specs .comic__price .comic_serie-link,
+.comic__body .comic__details .comic__specs .comic__sale-date .comic_serie-link {
+  color: cornflowerblue;
+  text-transform: uppercase;
+}
+.comic__body .comic__details .comic__specs .comic__serie p,
+.comic__body .comic__details .comic__specs .comic__price p,
+.comic__body .comic__details .comic__specs .comic__sale-date p {
+  padding: 16px 0;
+}
+.comic__body .comic__details .comic__specs .comic__serie .comic__specs-title,
+.comic__body .comic__details .comic__specs .comic__price .comic__specs-title,
+.comic__body .comic__details .comic__specs .comic__sale-date .comic__specs-title {
+  min-width: 200px;
+}
+.comic__body .comic__details .comic__specs .comic__sale-date {
+  border-bottom: 2px solid lightgrey;
+}

@@ -30,7 +30,7 @@ Route::get(
 
 Route::get('/', function () {
     $data = [
-        'cards' => config('cards'),
+        'comics' => config('comics'),
         'widgets' => config('widgets'),
     ];
     return view('comics', $data);

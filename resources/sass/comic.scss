@@ -16,3 +16,135 @@
     border: 1px solid white;
     max-height: 200px;
 }
+
+.comic__body {
+    background-color: white;
+    padding-top: 60px;
+    text-align: start;
+
+    .container {
+        .comic__grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            .comic__description {
+                padding-right: 50px;
+                .comic__text {
+                    color: black;
+                    padding: 16px 0;
+                    font-size: 14px;
+                    line-height: 1.8;
+                }
+                h4 {
+                    color: black;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+                .comic__price {
+                    background-color: #55ba59;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+                }
+                .comic__available {
+                    display: flex;
+                    gap: 20px;
+                    .comic__check-avail {
+                        padding: 0 20px;
+                        display: flex;
+                        gap: 20px;
+                    }
+                    .comic__check-avail::before {
+                        display: block;
+                        content: "";
+                        width: 1px;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        background-color: black;
+                        transform: translateX(-20px);
+                    }
+                }
+            }
+        }
+    }
+
+    .comic__details {
+        background-color: #f6f6f6;
+        h4 {
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            color: black;
+            padding: 30px 0 100px;
+            .comic__talent {
+                .comic__art,
+                .comic__authors {
+                    border-top: 2px solid lightgrey;
+                    padding: 16px 0;
+                    margin-right: 30px;
+                    font-size: 14px;
+                    display: flex;
+                    .comic__art-title,
+                    .comic__writers-title {
+                        min-width: 200px;
+                    }
+                }
+                .comic__authors {
+                    border-bottom: 2px solid lightgrey;
+                }
+                flex-basis: 0;
+                flex-grow: 1;
+                .comic__artists,
+                .comic__writers {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 4px;
+                    .comic__artist,
+                    .comic__writer {
+                        color: cornflowerblue;
+                        display: flex;
+                        cursor: pointer;
+                    }
+                    .comic__artist::after,
+                    .comic__writer::after {
+                        content: ",";
+                        color: black;
+                    }
+                    .comic__artist:last-of-type:after,
+                    .comic__writer:last-of-type:after {
+                        content: "";
+                    }
+                }
+            }
+        }
+        .comic__specs {
+            flex-basis: 0;
+            flex-grow: 1;
+
+            .comic__serie,
+            .comic__price,
+            .comic__sale-date {
+                display: flex;
+                border-top: 2px solid lightgrey;
+                .comic_serie-link {
+                    color: cornflowerblue;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    padding: 16px 0;
+                }
+
+                .comic__specs-title {
+                    min-width: 200px;
+                }
+            }
+
+            .comic__sale-date {
+                border-bottom: 2px solid lightgrey;
+            }
+        }
+    }
+}
