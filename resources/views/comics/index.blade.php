@@ -3,8 +3,8 @@
 
 @section('content')
   <div class="hero">
-      <img src={{asset('../img/jumbotron.jpg')}} />
-    </div>
+    <img src={{asset('../img/jumbotron.jpg')}} />
+  </div>
 
     <section class="series container">
       <h3>Current Series</h3>
@@ -13,8 +13,10 @@
         @foreach ($cards as $card)
           <li>
             <div class="card">
-              <img src="{{ $card['thumb'] }}">
-              <h4>{{ $card['series'] }}</h4>
+              <a href="{{ route('comic', $loop->index) }}">
+                <img src="{{ $card['thumb'] }}">
+                <h4>{{ $card['series'] }}</h4>
+              </a>
             </div>
           </li>
         @endforeach

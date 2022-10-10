@@ -13,10 +13,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get(
+    '/{id}',
+    function ($id) {
+        $comics = config('comics');
+        if ($id < count($comics)) {
+            $comic = $comics[$id];
+            $data = ['comic' => $comic];
+
+            return view('comics.show', $data);
+        } else {
+            abort(404);
+        }
+    }
+)->where('id', '[0-9]+')->name('comic');
+
 Route::get('/', function () {
     $data = [
         'cards' => config('cards'),
         'widgets' => config('widgets'),
     ];
-    return view('home', $data);
+    return view('comics', $data);
 });

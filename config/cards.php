@@ -63,7 +63,7 @@ return [
   [
     'thumb' => "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2020/10/BMWK_HQ_01_300-001_HD_5f7cb4945e13f6.89501032.jpg?itok=sVwALbUX",
     'price' => "$4.99",
-    'series' => "Batman: White Knight Presents=> Harley Quinn",
+    'series' => "Batman: White Knight Presents: Harley Quinn",
     'type' => "comic book",
   ],
   [
